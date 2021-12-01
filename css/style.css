@@ -1,0 +1,148 @@
+:root {
+    /* primary colors  */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* neutral colors  */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+body {
+    background: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom 24vh right 54vw, top 46vh left 32vw;
+    background-color: var(--dark-cyan);
+}
+
+.container {
+    margin: 22vh auto;
+    width: 325px;
+    height: 375px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+}
+
+.top {
+    height:140px;
+    background: url('/images/bg-pattern-card.svg') no-repeat center/cover;
+}
+
+.middle {
+    height: 150px;
+    position: relative;
+    background: white;
+}
+
+.middle figure img {
+    border-radius: 50%;
+    border: 5px white solid;
+    margin: -50px 110px 20px;
+
+}
+
+.middle h1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--very-dark-desaturated-blue);
+    position: absolute;
+    top: 70px;
+    left: 95px
+}
+
+.middle p {
+    color:  var(--dark-grayish-blue);
+    position: absolute;
+    top: 70px;
+    right: 95px
+}
+
+.middle .london {
+    color:var(--dark-gray);
+    position: absolute;
+    top: 100px;
+    right:135px;
+    font-size: 0.9em;
+}
+
+.middle hr {
+    height: 1px;
+    width: 325px;
+    border: none;
+    background-color: var(--dark-gray);
+    position: absolute;
+    top: 150px;
+    opacity: 0.3;
+}
+
+.stats {
+    background-color: white;
+    height: 85px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.stats .followers {
+    flex-basis: 140px;
+    text-align: center;
+}
+
+.stats .likes {
+    flex-basis: 0px;
+    text-align: center;
+}
+
+.stats .photos {
+    flex-basis: 160px;
+    text-align: center;
+}
+
+.count {
+    font-weight: 700;
+    color:var(--very-dark-desaturated-blue);
+}
+
+.text {
+    font-weight: 400;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding-top: 3px;
+    color: var(--dark-gray);
+}
+
+@media (min-width: 450px){
+    body {
+        background-position: bottom 24vh right 54vw, top 47vh left 50vw;
+    }
+}
+
+.attribution { 
+    position: relative;
+    bottom: 100px;
+    font-size: 14px; 
+    text-align: center; 
+
+}   
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

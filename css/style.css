@@ -43,7 +43,7 @@ body {
 
 .top {
     height:140px;
-    background: url('/images/bg-pattern-card.svg') no-repeat center/cover;
+    background: url('../images/bg-pattern-card.svg') no-repeat center/cover;
 }
 
 .middle {
